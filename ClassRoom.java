@@ -3,12 +3,17 @@ public class ClassRoom
     private String  roomNr;
     private boolean computer;
     private int     size;
+    private boolean beamer;
+    private boolean windows;
     
-    public ClassRoom(String newRoomNr, boolean newComputer, int newSize)
+    public void setBeamer(boolean newBeamer)
     {
-        setRoomNr(newRoomNr);
-        setComputer(newComputer);
-        setSize(newSize);
+        beamer = newBeamer;
+    }
+    
+    public void setWindows(boolean newWindows)
+    {
+        windows = newWindows;
     }
     
     public void setRoomNr(String newRoomNr)
@@ -39,5 +44,15 @@ public class ClassRoom
     public int getSize()
     {
         return size;
+    }
+    
+    public boolean getWindows()
+    {
+        return windows;
+    }
+    
+    public boolean getBeamer()
+    {
+        return beamer;
     }
 }
